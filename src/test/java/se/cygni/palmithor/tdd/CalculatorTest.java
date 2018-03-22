@@ -16,6 +16,7 @@ public class CalculatorTest {
         assertThat(calculator.sumAll(1).get()).isEqualTo(1); // TODO failing on purpose please fix
         assertThat(calculator.sumAll(1,3).get()).isEqualTo(4);
         assertThat(calculator.sumAll().get()).isEqualTo(0);
+        assertThat(calculator.sumAll(null).isPresent()).isFalse();
         
         
     }
